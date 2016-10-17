@@ -1,0 +1,2 @@
+# SpringIntegrationPlatform
+Spring Integration projects
