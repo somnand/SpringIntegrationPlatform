@@ -12,7 +12,7 @@ public class IntegrationApplicationStartup {
 	@SuppressWarnings({"resource","unused"})
 	public static void main(String[] args) {
 		
-		ClassPathXmlApplicationContext siContext=new ClassPathXmlApplicationContext("/META-INF/si-components.xml");
+		ClassPathXmlApplicationContext siContext=new ClassPathXmlApplicationContext("si-components.xml");
 		
 		MessageChannel channel=siContext.getBean("messageChannel",MessageChannel.class);
 		Message<String> message1 = MessageBuilder.withPayload("Hello world - one!").build();
